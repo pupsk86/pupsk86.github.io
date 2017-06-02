@@ -65,7 +65,7 @@ $(function(){
         controls.$basin.change(function(){
             var basinId = $(this).val();
             var basin = findBasinById(basins, basinId);
-            drawWaterObjects(basin.waterObjects);
+            drawWaterObjects(basin ? basin.waterObjects : []);
             drawHydroposts([]);
             drawHydropost();
         });
