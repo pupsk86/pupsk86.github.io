@@ -8,13 +8,14 @@ $(function(){
     defaults = {
         basin: controls.$basin.html(),
         waterObject: controls.$waterObject.html(),
-        hydropost: controls.$hydropost.html()
+        hydropost: controls.$hydropost.html(),
+        previewSrc: $preview.attr('src')
     }
     
     function drawHydropost(hydropostId) {
         var src = hydropostId ?
             'http://gis.vodinfo.ru/informer/draw/v2_' + hydropostId + '_400_300_30_ffffff_110_16_12_Haverage_none.png' :
-            '';
+            defaults.previewSrc;
         $preview.attr('src', src);
     }
     
