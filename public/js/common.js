@@ -14,7 +14,7 @@ $(function(){
     
     function drawHydropost(hydropostId) {
         var src = hydropostId ?
-            'http://gis.vodinfo.ru/informer/draw/v2_' + hydropostId + '_400_300_30_ffffff_110_16_12_Haverage_none.png' :
+            'http://gis.vodinfo.ru/informer/draw/v2_' + hydropostId + '_400_300_30_eeeeee_110_16_12_Haverage_none.png' :
             defaults.previewSrc;
         $preview.attr('src', src);
     }
