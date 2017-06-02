@@ -10,7 +10,7 @@ $(function(){
     }
 
     $hydropost.change(function(){
-        var hydropostId = $(this).val;
+        var hydropostId = $(this).val();
         drawHydropost(hydropostId);
     });
 });
